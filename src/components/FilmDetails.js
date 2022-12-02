@@ -13,7 +13,7 @@ const Details = ({ details }) => {
 			>
 				<Modal.Header>{details.title}</Modal.Header>
 				<Modal.Content>
-					Directed by {details.director}
+					Directed by, {details.director}
 					<Modal.Description>Directed by {details.opening_crawl}</Modal.Description>
 					<Modal.Description>
 						<strong>Release date {details.release_date}</strong>
