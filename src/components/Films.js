@@ -9,6 +9,8 @@ const Films = () => {
 	const { data, isError, isLoading } = useGetFilmsQuery()
 	const dispatch = useDispatch()
 
+	console.log(data)
+
 	const selectFilm = e => {
 		const { title } = e.currentTarget.dataset
 		const film = data.results.find(film => film.title === title)
